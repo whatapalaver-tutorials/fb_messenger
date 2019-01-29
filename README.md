@@ -8,20 +8,43 @@ The goal of this exercise is to learn how to style a React app using styled-comp
 
 If you haven't already set up your project, head here and follow the instructions https://github.com/leanjscom/fb-messenger/blob/master/README.md
 
-
 ### Step 2
+
 ```sh
  git checkout styling-in-react
- ```
+```
 
 ## Exercise
 
-### Part 1, install styled-components
+### Part 1, Storybook
 
-styled-components is a npm package which we need to add to our project
-```sh
- npm install --save styled-components
- ```
+#### P component
+
+Task 1. Use styled-components to move the style from the `p` tag from `src/components/Login/index` into `src/components/Form/P`.
+
+Task 2. There should be two stories in P.stories.js:
+
+1. The default P style
+2. The "quote" style when P receives the prop `quote={true}`. The quote style is the following:
+
+```
+{
+    paddingTop: "10px",
+    paddingLeft: "10px",
+    borderLeft: "4px solid grey"
+}
+```
+
+#### Button component
+
+Task 1. Using styled-components, implement the `src/components/Form/Button` using the styles defined in that file. Then create the following stories in `src/components/Form/Button.stories.js`:
+
+1. Default, no props required.
+2. Button large when prop `large={true}`
+3. Button primary when prop `primary={true}`
+4. Button block when prop `block={true}`
+
+Task 2. Replace the button tag in `src/components/Login/index` with the `Button` component from `src/components/Form/Button`
 
 ### Part 2, sharing variables
 
