@@ -66,7 +66,7 @@ Current styles, which are being mapped to our components via classes, can be fou
 
 ## Articles and links
 
-- [LeanJS article on Styling in React](https://medium.com/leanjs/styling-in-react-ddfb47eda4d0)
+- [ReactJS article on Styling in React](https://reactjs.academy/blog/styling-in-react/)
 - [https://www.styled-components.com/](https://www.styled-components.com/)
 - [https://github.com/css-modules/webpack-demo](https://github.com/css-modules/webpack-demo)
 - [https://github.com/css-modules/css-modules/](https://github.com/css-modules/css-modules/)
