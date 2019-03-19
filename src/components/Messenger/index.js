@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Route } from 'react-router-dom'
 
-import Threads from './Threads'
-import Conversation from './Conversation/Conversation'
+import ThreadsContainer from './ThreadsContainer'
+import ConversationContainer from './Conversation/ConversationContainer'
 
 const Messenger = ({ showSettings, toggleModal }) => (
   <div className="messenger">
-    <Threads />
-    <Route path={`/messages/:username`} component={Conversation} />
+    <ThreadsContainer />
+    <Route path={`/messages/:username`} component={ConversationContainer} />
   </div>
 )
 
