@@ -39,7 +39,7 @@ If you haven't already set up your project, head here and follow the instruction
 
 - [x] 7. In the following url [http://localhost:3000/login](http://localhost:3000/login), the `src/component/Login.js` should not display the `<TopBar>` and `<Footer>`. Hint: Why not try moving the Login component up the tree.
 
-- [ ] 8. Display the number of messages in `<ConversationBar>`.
+- [x] 8. Display the number of messages in `<ConversationBar>`.
 
 ### Bonus
 
