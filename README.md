@@ -37,7 +37,7 @@ If you haven't already set up your project, head here and follow the instruction
 
 - [x] 6. Move the logic on lines 36-44 of `Conversation.js` to the `componentDidUpdate()` lifecycle method in `ConversationContainer.js`. Why do you think [componentDidUpdate](https://reactjs.org/docs/react-component.html#componentdidupdate) is a better place?
 
-- [ ] 7. In the following url [http://localhost:3000/login](http://localhost:3000/login), the `src/component/Login.js` should not display the `<TopBar>` and `<Footer>`. Hint: Why not try moving the Login component up the tree.
+- [x] 7. In the following url [http://localhost:3000/login](http://localhost:3000/login), the `src/component/Login.js` should not display the `<TopBar>` and `<Footer>`. Hint: Why not try moving the Login component up the tree.
 
 - [ ] 8. Display the number of messages in `<ConversationBar>`.
 
