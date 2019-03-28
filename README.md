@@ -64,6 +64,13 @@ Current styles, which are being mapped to our components via classes, can be fou
 - Take appropriate styles from the stylesheet for each of the component and create styled components within each of the components or as a separate component should you need it (if the styled-component is being used on multiple places).
 - You can work your way through your application, starting with smaller components in the Layout folder to the bigger ones in Messenger.
 
+## Learning objectives
+
+- Understand how thinking of styles in a component based approach is more beneficial. 
+- Understand different approaches to styling in React and how the shift in styling appraoch continues to maintain separation of concerns.
+- Learn how to use styled-components and apply them to a project to achieve styling at run time.
+- Learn how using storybook is a good option for visually documenting our components.
+
 ## Articles and links
 
 - [ReactJS article on Styling in React](https://reactjs.academy/blog/styling-in-react/)
