@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import Input from "../Form/Input";
+import P from "../Form/P";
+import Button from "../Form/Button";
 import { logIn } from "../../api/auth";
 import "./Login.css";
 
@@ -59,26 +61,14 @@ class Login extends Component {
             onChange={e => (this.password = e.target.value)}
           />
         </div>
-        <button
-          type="submit"
-          className="btn btn-lg btn-primary btn-block"
-          onClick={this.handleSubmit}
-        >
+        <Button primary large block type="submit" onClick={this.handleSubmit}>
           Sign in
-        </button>
-        <p style={{ paddingTop: "10px" }}>
-          Disclaimer, this network is highly addictive.
-        </p>
-        <p
-          style={{
-            paddingTop: "10px",
-            paddingLeft: "10px",
-            borderLeft: "4px solid grey"
-          }}
-        >
+        </Button>
+        <P>Disclaimer, this network is highly addictive.</P>
+        <P quote={true}>
           "My friends went from a few dozens to a few thousand after I joined
           this network!" - Anonymous
-        </p>
+        </P>
       </form>
     );
   }
