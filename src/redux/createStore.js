@@ -5,10 +5,10 @@ export const createStore = (reducer) => {
   let state = reducer(undefined, { type: '@INIT' })
   let listeners = []
 
-  const getState = () => { }
+  const getState = () => { return state }
 
-  const dispatch = () => {
-    state = reducer(state)
+  const dispatch = (action) => {
+    state = reducer(state, action)
     listeners.forEach(listener => listener())
   }
 
@@ -19,5 +19,5 @@ export const createStore = (reducer) => {
     }
   }
 
-  return {}
+  return {getState, dispatch, subscribe}
 }

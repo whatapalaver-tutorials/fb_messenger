@@ -5,6 +5,8 @@ import indexReducer from '../src/reducers'
 import { createStore } from '../src/redux/createStore'
 import reducers from '../src/reducers'
 
+
+
 describe("The action creator called receiveThread in src/actions/index.js", () => {
   it("should return a JSON object with a key called 'type' and value RECEIVE_THREAD", () => {
     const action = receiveThread()

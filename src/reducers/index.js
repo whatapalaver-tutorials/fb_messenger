@@ -12,14 +12,17 @@ export function uiReducer(state = { isMessageDetailOpen: true }, action) {
     }
 }
 
-export function threadReducer(state, action) {
+export function threadReducer(state = null, action) {
     switch (action.type) {
-
+        case RECEIVE_THREAD:
+            return action.thread
+        default:
+            return state
     }
 }
 
 export default combineReducers({
     ui: uiReducer,
-    thread: '?',
+    thread: threadReducer,
     // combineReducers can combine as many reducers as you need
 })

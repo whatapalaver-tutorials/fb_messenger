@@ -13,7 +13,7 @@ action creators
 */
 
 export const receiveThread = (thread) => ({
-    type: '?',
+    type: 'RECEIVE_THREAD',
     thread
 })
 
