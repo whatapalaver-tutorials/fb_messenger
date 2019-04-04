@@ -17,6 +17,11 @@ export const receiveThread = (thread) => ({
     thread
 })
 
+export const receiveConversation = (conversation) => ({
+    type: 'RECEIVE_CONVERSATION',
+    conversation
+})
+
 export const toggleMessageDetail = () => ({
     type: TOGGLE_MESSAGE_DETAIL,
 })

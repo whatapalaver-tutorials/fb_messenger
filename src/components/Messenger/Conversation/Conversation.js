@@ -6,14 +6,14 @@ import ConversationContent from './Content'
 const Conversation = ({
   conversation, match
 }) => {
-  const { username } = match.params
+  const { username } = match.params
 
   return ([
     <ConversationBar
-      conversation={conversation}
       key="bar"
       username={username}
       match={match}
+      conversation={conversation}
     />
     ,
     <ConversationContent

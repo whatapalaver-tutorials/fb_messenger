@@ -41,7 +41,7 @@ describe("src/reducers/index.js", () => {
   it("should combine the thread reducer AND the ui reducer", () => {
     const received = indexReducer(undefined, { type: '@@redux/INIT' })
 
-    expect(received).toEqual({ thread: null, ui: { isMessageDetailOpen: true } })
+    expect(received).toEqual({ thread: null, ui: { isMessageDetailOpen: false } })
   })
 })
 
